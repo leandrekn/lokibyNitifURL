@@ -1,0 +1,30 @@
+{
+  "name": "firestore",
+  "version": "1.0.0",
+  "description": "firebase cloud firestore",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "nodemon --experimental-modules index.js"
+  },
+  "author": "leandre",
+  "license": "ISC",
+  "dependencies": {
+    "@ngrok/ngrok": "^0.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "firebase": "^10.7.2",
+    "ngrok": "^5.0.0-beta.2",
+    "nodemon": "^3.0.3",
+    "xmldom": "^0.6.0"
+  },
+  "presets": [
+    [
+      "@babel/preset-env"
+    ]
+  ],
+  "type": "module"
+}
