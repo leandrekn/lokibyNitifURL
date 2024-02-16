@@ -52,8 +52,8 @@ const update = doc(db,"Article",artId);
   // Utilisation de arrayUnion pour ajouter des éléments à la liste sans doublons
   await updateDoc(update, {
     reservation: arrayUnion(data),
-    recentReservation:recentReserv,
-    iDclient:clientId,
+    recentReservation: parseInt(recentReserv),
+    iDclient:arrayUnion(clientId),
     reserver:true,
     periodReservation:periodReser,
     // Ajoutez vos données à la liste "reservation"
