@@ -34,11 +34,15 @@ app.use(bodyParser.json());
 
 // get method
  app.get('/create',async(req,res)=>{
+  
   const data = req.query;
   const uId=req.query.returnContext;
  const tab=uId.split(",")
  const artId=tab[0] ;
- const clientId =tab[1]
+ const clientId =tab[1];
+ const recentReserv =tab[2]
+ const periodReser =tab[4]
+
  // await addDoc(collection(db,'Article').doc(artId).update,data)
 const update = doc(db,"Article",artId);
 //await updateDoc(update,data);
@@ -47,8 +51,14 @@ const update = doc(db,"Article",artId);
   
   // Utilisation de arrayUnion pour ajouter des éléments à la liste sans doublons
   await updateDoc(update, {
-    reservation: arrayUnion(data),// Ajoutez vos données à la liste "reservation"
+    reservation: arrayUnion(data),
+    recentReservation:recentReserv,
+    iDclient:clientId,
+    reserver:true,
+    periodReservation:periodReser,
+    // Ajoutez vos données à la liste "reservation"
   });
+ 
 
   res.status(200).send("donne enregistre avec success")
  })
