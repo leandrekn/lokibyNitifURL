@@ -55,7 +55,7 @@ const update = doc(db,"Article",artId);
     recentReservation: parseInt(recentReserv),
     iDclient:arrayUnion(clientId),
     reserver:true,
-    periodReservation:periodReser,
+    periodReservation:arrayUnion(periodReser),
     // Ajoutez vos données à la liste "reservation"
   });
  
