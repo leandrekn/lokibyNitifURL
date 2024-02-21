@@ -70,37 +70,50 @@ const update = doc(db,"Article",artId);
                   margin: 0;
                   padding: 0;
                   font-family: Arial, sans-serif;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 100vh;
               }
               header {
-                  background: linear-gradient(to right, #8A2BE2, #00BFFF); /* Dégradé de violet à bleu */
+                  background: linear-gradient(to right, #00BFFF, #8A2BE2); /* Dégradé de bleu à violet */
                   padding: 20px;
                   color: white;
                   display: flex;
                   justify-content: space-between;
                   align-items: center;
+                  width: 100%;
+                  position: fixed;
+                  top: 0;
               }
               header img {
                   height: 50px; /* Ajustez la hauteur selon vos besoins */
                   margin-left: 20px; /* Espace à gauche du logo */
               }
               .content {
-                  padding: 20px;
+                  text-align: center;
+              }
+              button {
+                  font-size: 20px;
+                  padding: 10px 20px;
+                  margin-top: 20px;
               }
           </style>
       </head>
       <body>
           <header>
-              <img src="lokiby.jpeg" alt="Logo"> <!-- Remplacez chemin/vers/votre/logo.png par le chemin de votre logo -->
-              <h1>Votre réservation a été enregistrée avec succès!</h1>
+              <img src="chemin/vers/votre/logo.png" alt="Logo"> <!-- Remplacez chemin/vers/votre/logo.png par le chemin de votre logo -->
           </header>
           <div class="content">
+              <h1>Votre réservation a été enregistrée avec succès!</h1>
               <p>Merci pour votre réservation.</p>
               <a href="https://www.lokiby.com" target="_blank"><button>Aller vers Lokiby</button></a>
           </div>
       </body>
   </html>
 `);
- })
+});
+
 app.listen(config.port, () =>
   console.log(`Server is live @ ${config.hostUrl}`),
 );
