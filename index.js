@@ -102,11 +102,11 @@ const update = doc(db,"Article",artId);
       </head>
       <body>
           <header>
-              <img src="chemin/vers/votre/logo.png" alt="Logo"> <!-- Remplacez chemin/vers/votre/logo.png par le chemin de votre logo -->
+              <img src="lokiby.jpeg" alt="Logo"> <!-- Remplacez chemin/vers/votre/logo.png par le chemin de votre logo -->
           </header>
           <div class="content">
               <h1>Votre réservation a été enregistrée avec succès!</h1>
-              <p>Merci pour votre réservation.</p>
+              <p>Connectez-vous à votre espace pour voir les détails de votre réservation.</p>
               <a href="https://www.lokiby.com" target="_blank"><button>Aller vers Lokiby</button></a>
           </div>
       </body>
