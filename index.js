@@ -60,7 +60,46 @@ const update = doc(db,"Article",artId);
   });
  
 
-  res.status(200).send("donne enregistre avec success")
+  res.status(200).send(`
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>Réservation enregistrée avec succès</title>
+          <style>
+              body {
+                  margin: 0;
+                  padding: 0;
+                  font-family: Arial, sans-serif;
+              }
+              header {
+                  background: linear-gradient(to right, #8A2BE2, #00BFFF); /* Dégradé de violet à bleu */
+                  padding: 20px;
+                  color: white;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+              }
+              header img {
+                  height: 50px; /* Ajustez la hauteur selon vos besoins */
+                  margin-left: 20px; /* Espace à gauche du logo */
+              }
+              .content {
+                  padding: 20px;
+              }
+          </style>
+      </head>
+      <body>
+          <header>
+              <img src="lokiby.jpeg" alt="Logo"> <!-- Remplacez chemin/vers/votre/logo.png par le chemin de votre logo -->
+              <h1>Votre réservation a été enregistrée avec succès!</h1>
+          </header>
+          <div class="content">
+              <p>Merci pour votre réservation.</p>
+              <a href="https://www.lokiby.com" target="_blank"><button>Aller vers Lokiby</button></a>
+          </div>
+      </body>
+  </html>
+`);
  })
 app.listen(config.port, () =>
   console.log(`Server is live @ ${config.hostUrl}`),
