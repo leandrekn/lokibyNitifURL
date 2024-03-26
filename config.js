@@ -23,11 +23,11 @@ export default {
   host: 'localhost',
   hostUrl: "https://52bf-41-85-163-194.ngrok-free.app/",
   firebaseConfig: {
-    apiKey: "AIzaSyBT8TYVZ_NdDOcFFTD4ZBbxjbMsGyGEYAs",
-  authDomain: "lokibyappweb.firebaseapp.com",
-  projectId: "lokibyappweb",
-  storageBucket: "lokibyappweb.appspot.com",
-  messagingSenderId: "695856635665",
-  appId: "1:695856635665:web:6c8b3ca28b71e2cf4736b0",
+    apiKey: "AIzaSyBnjBkGazWspX5MoectIwYUrkTTnJi8ei8",
+    authDomain: "lokiby-bb465.firebaseapp.com",
+    projectId: "lokiby-bb465",
+    storageBucket: "lokiby-bb465.appspot.com",
+    messagingSenderId: "320617838551",
+    appId: "1:320617838551:web:8a8800b3c1d7c70c03bd92",
   },
 };

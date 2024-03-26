@@ -107,7 +107,7 @@ const update = doc(db,"Article",artId);
           <div class="content">
               <h1>Votre réservation a été enregistrée avec succès!</h1>
               <p>Connectez-vous à votre espace pour voir les détails de votre réservation.</p>
-              <a href="https://lokibyappweb.web.app" target="_blank"><button>Aller vers Lokiby</button></a>
+              <a href="https://lokiby.com" target="_blank"><button>Aller vers Lokiby</button></a>
           </div>
       </body>
   </html>
